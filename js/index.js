@@ -89,14 +89,14 @@ Create a new variable phraseToCheck and have it contain some string value. Write
 let phraseToCheck = "step on no pets";
 
 function checkPalindrome(phrase){
-  let halfPhrase = "";
+  let normalPhrase = "";
   let reversedPhrase = "";
   phrase = phrase.toLowerCase().replace(/\s/g, '');
 
-  for (let i = 0; i < phrase.length; i++) halfPhrase += phrase[i];
+  for (let i = 0; i < phrase.length; i++) normalPhrase += phrase[i];
   for (let i = phrase.length - 1; i >= 0; i--) reversedPhrase += phrase[i];
 
-  if (halfPhrase === reversedPhrase) return true;
+  if (normalPhrase === reversedPhrase) return true;
   else return false;
 }
 
